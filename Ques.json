@@ -1,0 +1,40 @@
+
+[
+    { 
+        "question": "How many SAW movies are there?",
+        "options": ["4", "10", "6", "12"],
+        "answer": "10"
+    },
+    {
+        "question": "When was titanic released?",
+        "options": ["2001", "2005", "1997", "2003"],
+        "answer": "1997"
+    },
+    {
+        "question": "Was there real killer ants in the set of the Scorpion King?",
+        "answer": true 
+    },
+    {
+        "question": "Who played Batman in the Batman series",
+        "options": ["James Charles", "Christopher Walken", "George Clooney", "Robert Pattison"],
+        "answer": ["George Clooney", "Robert Pattison"]
+    },
+    {
+        "question": "Which game has NOT had a movie adaption?",
+        "options": ["Minecraft", "Resident Evil", "Sonic", "Grand Theft Auto" ],
+        "answer": "Grand Theft Auto"
+    },
+    {
+        "question": "Did Jackie Chan do all of his stunts?",
+        "answer": true
+    },
+    {
+        "question": "Did Disney buy the rights for the Marvel movies?",
+        "answer": true
+    },
+    {
+        "question": "how many",
+        "options": [],
+        "answer": ""
+    }
+]
