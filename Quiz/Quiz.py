@@ -1,22 +1,27 @@
+
 #Welcoming into game along with insertting usename
 print("Welcome to Movie Mayham!")
-print("Please enter your usernme: ")
+username = input("Please enter a username: ")
 
+print(f"Hi {username}! let's get started")
 
-#importing my questions first from my json file
+#We will now import the questions from the json file will also 
+#putting in to keep score
+
 import json
 
-def questions(Qui_ques):
-    with open(Qui_ques, 'r') as files:
-        questions = json.load(Qui_ques)
+def load_questions(file_path):
+    with open(file_path, 'r') as file:
+        questions = json.load(file)
     return questions
+
+#going to run quiz in this function
 
 def run_quiz(questions):
     score = 0
+    for item in questions:
+        print(item['question'])
+        for idx, option in enumerate(item['options'], start=1):
+            print(f"{idx}. {option}")
 
-for question, answer in questions:
-    answer = input(f"{question}? ")
-    if answer == answer:
-        print("Correct!")
-    else:
-        print(f"The answer is {answer!r}!,")
+        answer = input("Your answer: ")
